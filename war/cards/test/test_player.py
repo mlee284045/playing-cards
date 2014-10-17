@@ -1,5 +1,5 @@
 from django.test import TestCase
-from cards.models import Player, WarGame
+from cards.models import WarGame
 from cards.test.factories import WarGameFactory, PlayerFactory
 
 
