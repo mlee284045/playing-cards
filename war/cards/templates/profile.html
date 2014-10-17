@@ -1,8 +1,10 @@
 {% extends 'base_template.html' %}
 
 {% block content %}
-    <p>Hi {{ user.username }}, you have 0 wins and 0 loses.</p>
+    <p>Hi {{ user.username }}</p>
+    <p>You have the {{ badge }} badge.</p>
     <p>Your email address is {{ user.email }}</p>
+    <p>You have {{ wins }} wins, {{ losses }} losses, and {{ ties }} ties.</p>
 
     <h2>Past Games</h2>
     {% for game in games %}
